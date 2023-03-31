@@ -30,7 +30,7 @@ makeFetch('https://jsonplaceholder.typicode.com/users?id=2')
             <RouterLink
               class="card-link"
               :to="{ path: `/entry/${props.post.userId}/${props.post.id}/${data[0]?.name}` }"
-              >Ver Post</RouterLink
+              >Ver Post</RouterLink 
             >
           </div>
         </div>

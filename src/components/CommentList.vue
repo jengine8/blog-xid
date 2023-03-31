@@ -1,14 +1,12 @@
 <script setup lang="ts">
 import CommentItem from '@/components/CommentItem.vue';
 import {useFetch} from "@/composables/useFetch"
-interface Comment {
- 
- id:string,
- 
-}
-const props = defineProps<{
-  commentId: Comment
-}>()
+
+const props = defineProps({
+  commentId: { type: String, required: true },
+  
+})
+
 
 const {data,
     isLoading,

@@ -13,6 +13,7 @@ export function useFetch()
     try {
       const response = await axios.get(url)
       data.value = response.data
+      
     } catch (e) {
       error.value = "Algo salio mal al consultar la informacion..."
     } finally {
